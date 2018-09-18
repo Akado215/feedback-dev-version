@@ -1,0 +1,45 @@
+﻿.contact .main-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eee;
+  background: #fafafa;
+  margin-bottom: 15px;
+}
+
+.btn-bg-md, .btn-bg-md:hover, .btn-bord-md:hover, .contact .main-form input[type=submit]:hover, .price .active {
+  border-color: #73ae20 !important;
+}
+
+input.button.btn-bg-md:hover {
+  color: #fff !important;
+}
+
+.btn-bg-md, .clients .owl-theme .owl-dots .active span, .contact .main-form input[type=submit], .numbers .numb-item h3:after, .price .active, .team .skills .item .skills-progress span, .us .item h6:after, footer .main-footer .social-icon span:hover {
+  background: #73ae20 !important;
+}
+
+.contact{
+  padding: 100px 0;
+}
+
+.contact .main-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eee;
+  background: #fafafa;
+  margin-bottom: 15px;
+}
+
+.contact .main-form textarea {
+  width: 100%;
+  height: 140px;
+  max-width: 100%;
+  max-height: 140px;
+  padding: 10px;
+  background: #fafafa;
+  border: 1px solid #eee;
+}
+
+input.ng-touched.ng-invalid, textarea.ng-touched.ng-invalid {
+  border-color: red !important;
+}

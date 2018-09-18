@@ -1,0 +1,51 @@
+﻿<!--The content below is only a placeholder and can be replaced.-->
+<div class="container">
+  <section class="contact">
+    <div class="main-form">
+      <div class="row">
+        <div class="col-md-12">
+          <form [formGroup]="myReactiveForm" class="form" (submit)="onSubmit()">
+            <div class="controls">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="form_name">Name *</label>
+                    <input formControlName="name" id="form_name" name="name" placeholder="Name *" type="text">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input formControlName="email" id="form_email" name="email" placeholder="Email *" type="text">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="form_phone">Phone number</label>
+                    <input formControlName="phone" id="form_phone" name="phone" placeholder="Phone number" type="text">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea formControlName="message" id="form_message" name="message" placeholder="Message *" rows="4"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <input class="g-recaptcha button btn-bg-md form-submit-button" type="submit" value="Talk to us">
+                </div>
+              </div>
+            </div>
+          </form>
+          <div>
+            {{myReactiveForm.value | json}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
